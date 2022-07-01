@@ -9,6 +9,15 @@ export const ProductSelectStyled = styled.div`
   .nav {
     display: flex;
     gap: 10px;
+    button{
+      background-color: blue;
+      color: yellow;
+      
+    }
+    .active{
+      background-color: yellow;
+      color: blue;
+    }
   }
   .backgroundImage {
     width: 100%;
