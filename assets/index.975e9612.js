@@ -502,6 +502,10 @@ Error generating stack: `+i.message+`
           p{
             font-size: 13px;
             text-transform: uppercase;
+            &:hover{
+              color: blue;
+              border-bottom: 1px solid blue;
+            }
           }
         }
       }
