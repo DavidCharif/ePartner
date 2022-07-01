@@ -1,0 +1,52 @@
+import React from 'react'
+
+const ItemsSelected = () => {
+  const items = new Array(4).fill(
+    <div
+      style={{
+        height: '90%',
+        width: '200px',
+        backgroundColor: 'gray',
+      }}></div>
+  )
+  return (
+    <div
+      style={{
+        marginTop: '100px'
+      }}
+    >
+    <p
+      style={{
+        textAlign: 'center',
+        margin: '0 auto',
+        fontSize: '20px',
+        fontWeight: 'bold',
+        color: '#17559b'
+
+      }}
+    >NUEVA COLECCION</p>
+    <div
+      style={{
+        marginTop: '10px',
+        height: '30vh',
+        width: '100vw',
+        padding: '20px',        
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        gap: '5px'
+
+      }}
+    >      
+      {
+      items.map((item, index) => {
+        return <div key={index}>{item}</div>
+      }
+      )
+    }</div>
+    </div>
+  )
+}
+
+export default ItemsSelected
