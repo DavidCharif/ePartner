@@ -52,7 +52,7 @@ Error generating stack: `+o.message+`
   flex-direction: row;
   height: 400px;
   width: 100%;  
-  margin-top: 250px;
+  margin-top: 150px;
   justify-content: center;
   gap: 10px;
   div {
@@ -131,7 +131,7 @@ Error generating stack: `+o.message+`
   }
 
 
-`,Lm=()=>st(Am,{children:[st("div",{className:"left",children:[st("div",{className:"left-top",children:[j("div",{className:"left-top-left",children:j("p",{children:"Por que elegirnos"})}),j("div",{className:"left-top-right",children:j("p",{children:"Tienda surtida"})})]}),st("div",{className:"left-bottom",children:[j("div",{className:"left-bottom-left",children:j("p",{children:"Usuario interesado"})}),j("div",{className:"left-bottom-right",children:j("p",{children:"servicio integral"})})]})]}),j("div",{className:"right",children:j("div",{children:"Gente informada"})})]}),Im=({activeImage:e})=>j("div",{style:{height:"40vh",backgroundColor:"gray"},children:"ImageHeader"}),Mm=()=>{const e=new Array(7).fill(j("div",{style:{height:"150px",width:"300px",backgroundColor:"gray"}}));return j("div",{style:{display:"flex",flexDirection:"row",marginTop:"20px",marginBottom:"250px",gap:"10px",width:"100vw",overflowX:"scroll",backgroundColor:"black"},children:e.map((t,n)=>j("div",{children:t},n))})},Dm=Qn.div`
+`,Lm=()=>st(Am,{children:[st("div",{className:"left",children:[st("div",{className:"left-top",children:[j("div",{className:"left-top-left",children:j("p",{children:"Por que elegirnos"})}),j("div",{className:"left-top-right",children:j("p",{children:"Tienda surtida"})})]}),st("div",{className:"left-bottom",children:[j("div",{className:"left-bottom-left",children:j("p",{children:"Usuario interesado"})}),j("div",{className:"left-bottom-right",children:j("p",{children:"servicio integral"})})]})]}),j("div",{className:"right",children:j("div",{children:"Gente informada"})})]}),Im=({activeImage:e})=>j("div",{style:{height:"40vh",backgroundColor:"gray"},children:"ImageHeader"}),Mm=()=>{const e=new Array(7).fill(j("div",{style:{height:"150px",width:"300px",backgroundColor:"gray"}}));return j("div",{style:{display:"flex",flexDirection:"row",marginTop:"20px",marginBottom:"150px",gap:"10px",width:"100vw",overflowX:"scroll",backgroundColor:"black"},children:e.map((t,n)=>j("div",{children:t},n))})},Dm=Qn.div`
   width: 100%;
   p { 
     text-align: center;
@@ -181,7 +181,7 @@ Error generating stack: `+o.message+`
 
   }
 }
-`,wl=({title:e})=>{const t=new Array(4).fill(j(ss,{}));return st(Dm,{children:[j("p",{children:e}),j("div",{className:"itemsContainer",children:t.map((n,r)=>j("div",{className:"items",children:n},r))})]})},Fm=Qn.nav`
+`,wl=({title:e})=>{const t=new Array(4).fill(j(ss,{}));return st(Dm,{className:"itemsSelected",children:[j("p",{children:e}),j("div",{className:"itemsContainer",children:t.map((n,r)=>j("div",{className:"items",children:n},r))})]})},Fm=Qn.nav`
   width: 100vw;
   height: 90px;
   div{
@@ -210,7 +210,7 @@ Error generating stack: `+o.message+`
   }
   .itemsSelected {
     position:absolute;
-    top: 50px;
+    top: 150px;
   }
 
 `,Bm=()=>{const[e,t]=Je.useState("1"),[n,r]=Je.useState(za(e));Je.useEffect(()=>{r(za(e))},[e]);const l=({target:{value:o}})=>{t(o)};return st(Um,{children:[st("div",{className:"nav",children:[j("button",{type:"button",value:1,onClick:l,children:"Silla de ruedas"}),j("button",{type:"button",value:2,onClick:l,children:"Terapia en el hogar"}),j("button",{type:"button",value:3,onClick:l,children:"Movilidad"})]}),j("div",{className:"backgroundImage"}),j(wl,{title:n})]})};function za(e){switch(e){case"1":return"Silla de ruedas";case"2":return"Terapia en el hogar";case"3":return"Movilidad";default:console.log("error")}}var td={exports:{}},Vm="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED",Hm=Vm,Wm=Hm;function nd(){}function rd(){}rd.resetWarningCache=nd;var Qm=function(){function e(r,l,o,i,u,s){if(s!==Wm){var c=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw c.name="Invariant Violation",c}}e.isRequired=e;function t(){return e}var n={array:e,bool:e,func:e,number:e,object:e,string:e,symbol:e,any:e,arrayOf:t,element:e,elementType:e,instanceOf:t,node:e,objectOf:t,oneOf:t,oneOfType:t,shape:t,exact:t,checkPropTypes:rd,resetWarningCache:nd};return n.PropTypes=n,n};td.exports=Qm();var Ym=td.exports;ld.propTypes={children:Ym.node.isRequired};function ld({children:e}){const[t,n]=Je.useState(0),[r,l]=Je.useState([]);return j(ss,{children:Je.Children.map(e,o=>Je.cloneElement(o,{activeImage:t,setActiveImage:n,images:r}))})}function Gm(){return st(ss,{children:[j(jm,{}),st(ld,{children:[j(Im,{}),j(Mm,{}),j(wl,{title:"NUEVA COLECCION"})]}),j(Lm,{}),j(Bm,{}),j($m,{}),j(wl,{title:"AYUDAS PARA LA MARCHA"}),j(wl,{title:"TERAPIAS RESPIRATORIAS"}),j(Om,{})]})}ii.createRoot(document.getElementById("root")).render(j(Je.StrictMode,{children:j(Gm,{})}));
