@@ -4,8 +4,8 @@ const ItemsSelected = () => {
   const items = new Array(4).fill(
     <div
       style={{
-        height: '90%',
-        width: '200px',
+        height: '350px',
+        width: '280px',
         backgroundColor: 'gray',
       }}></div>
   )

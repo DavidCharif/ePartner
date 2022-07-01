@@ -6,7 +6,7 @@ const ImageSelectors = () => {
     <div 
       style={{
         height: '150px',
-        width: '200px',
+        width: '300px',
         backgroundColor: 'gray',
       }}
     >

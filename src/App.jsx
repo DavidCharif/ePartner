@@ -1,4 +1,5 @@
 import React from "react"
+import GridOptions from "./Components/GridOptions"
 import ImageHeader from "./Components/ImageHeader"
 import ImageSelectors from "./Components/ImageSelectors"
 import ItemsSelected from "./Components/ItemsSelected"
@@ -14,6 +15,7 @@ function App() {
         <ImageSelectors />
         <ItemsSelected />
       </HeaderImage>
+      <GridOptions/>
     </>
   )
 }
