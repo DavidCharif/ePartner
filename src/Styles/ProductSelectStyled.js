@@ -17,7 +17,7 @@ export const ProductSelectStyled = styled.div`
   }
   .itemsSelected {
     position:absolute;
-    top: 50px;
+    top: 150px;
   }
 
 `

@@ -5,7 +5,8 @@ export const AdditionalOptionsStyled = styled.div`
   flex-direction: row;
   height: 400px;
   width: 100%;  
-  margin-top: 250px;
+  margin: 150px auto;
+
   justify-content: center;
   gap: 10px;
   div {

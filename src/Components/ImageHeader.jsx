@@ -1,15 +1,23 @@
 import React from 'react'
-
+import image from '../Assets/Header.jpg'
 const ImageHeader = ({
   activeImage,
 }) => {
   return (
     <div
       style={{
-        height: '40vh',
+        height: '50vh',
         backgroundColor: 'gray',
       }}
-    >ImageHeader</div>
+    >
+      <img src={activeImage} alt='header'
+        style={{
+          height: '100%',
+          width: '100%',
+          objectFit: 'cover',
+        }}
+      />
+    </div>
   )
 }
 
