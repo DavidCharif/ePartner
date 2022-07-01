@@ -29,6 +29,7 @@ export const NavBarStyled = styled.nav`
       flex-direction: row;
       align-items: center;
       padding: 2px;
+  
       .searchBarContainer{
       border-radius: 5px;
       border: 1px solid black;
@@ -37,6 +38,7 @@ export const NavBarStyled = styled.nav`
       display: flex;
       flex-direction: row;
       align-items: center;
+   
       input{
         flex-basis: 95%;
         height:80%;
@@ -121,18 +123,66 @@ export const NavBarStyled = styled.nav`
           width: 20px;
         }
         .open {
+          border: 1px solid black;
           display: flex;
           position: absolute;
           flex-direction: column;
           align-items: center;
-          justify-content: center;
-          top: 100px;
+          justify-content: space-between;
+          top: 80px;
           right: 8px;
           width: 300PX;
-          height: fit-content;
+          min-height: 300px;
+          max-height: fit-content;
           background-color: white;
+          display: flex;
+          flex-direction: column;
+          ul{
+            width: 100%;
+            padding: 0;
+            .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+              li {
+                list-style: none;
+              }
+            }
+            .total {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              list-style: none;
+              
+            }
+            .buttons {
+              display: flex;
+              flex-direction:column;
+              justify-content: space-around;
+              list-style: none;
+              gap: 50px;
+              button {
+                width: 100%;
+              }
+            }
+          }
+          .cartItem{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            li{
+              list-style: none;
+            }
+            img {
+              height: 50px;
+            }
+          }
+          }        
           
-        }
+        
         p{
           font-size: 13px;
           font-weight: 500;
@@ -179,6 +229,10 @@ export const NavBarStyled = styled.nav`
           }
         }
       }
+      @media (max-width: 768px) {
+        display: none;
+      }
+
     }
   }  
-  `
+  `;

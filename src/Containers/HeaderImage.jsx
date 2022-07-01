@@ -13,43 +13,43 @@ HeaderImage.propTypes = {
 };
 
 function HeaderImage({ children }) {
-
-  const images = [{
-    src: selector1,
-    alt: 'selector1',
-    title: 'Tapabocas',
-  },
-  {
-    src: selector2,
-    alt: 'selector2',
-    title: 'Silla de ruedas',
-  },
-  {
-    src: selector3,
-    alt: 'selector3',
-    title: 'Ayuda para la marcha',
-  },
-  {
-    src: selector4,
-    alt: 'selector4',
-    title: 'Terapias respiratorias',    
-  },
-  {
-    src: selector5,
-    alt: 'selector5',
-    title: 'Tapabocas',
-  },{
-    src: selector6,
-    alt: 'selector6',
-    title: 'Silla de ruedas',
-  },{
-    src: selector7,
-    alt: 'selector7',
-    title: 'Ayuda para la marcha',
-  }
-
-
-]
+  const images = [
+    {
+      src: selector1,
+      alt: "selector1",
+      title: "Tapabocas",
+    },
+    {
+      src: selector2,
+      alt: "selector2",
+      title: "Silla de ruedas",
+    },
+    {
+      src: selector3,
+      alt: "selector3",
+      title: "Ayuda para la marcha",
+    },
+    {
+      src: selector4,
+      alt: "selector4",
+      title: "Terapias respiratorias",
+    },
+    {
+      src: selector5,
+      alt: "selector5",
+      title: "Tapabocas",
+    },
+    {
+      src: selector6,
+      alt: "selector6",
+      title: "Silla de ruedas",
+    },
+    {
+      src: selector7,
+      alt: "selector7",
+      title: "Ayuda para la marcha",
+    },
+  ];
   const [activeImage, setActiveImage] = React.useState(images[0].src);
 
   return (
@@ -58,7 +58,7 @@ function HeaderImage({ children }) {
         return React.cloneElement(child, {
           activeImage,
           setActiveImage,
-          images,          
+          images,
         });
       })}
     </>

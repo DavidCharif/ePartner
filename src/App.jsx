@@ -5,7 +5,7 @@ import GridOptions from "./Components/GridOptions"
 import ImageHeader from "./Components/ImageHeader"
 import ImageSelectors from "./Components/ImageSelectors"
 import ItemsSelected from "./Components/ItemsSelected"
-import NavBar from "./Components/NavBar"
+import NavBar from "./Containers/NavBar"
 import ProductSelect from "./Components/ProductSelect"
 import HeaderImage from "./Containers/HeaderImage"
 

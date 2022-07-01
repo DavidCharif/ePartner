@@ -25,6 +25,7 @@ export const ItemsSelectedStyled = styled.div`
     width: 280px;       
     display: flex;
     flex-direction: column;    
+    margin-bottom: 60px;
     img {
       width: 100%;
       height: 100%;
@@ -40,6 +41,7 @@ export const ItemsSelectedStyled = styled.div`
       display: none;
       background-color: blue;
       border-radius: 5px;
+      margin-bottom: 100px;
     }
     &:hover {
       button {

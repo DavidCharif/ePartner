@@ -13,10 +13,5 @@ export const AdditionalOptionsStyled = styled.div`
     width: 40%;
     height: 100%;
   }
-  div:first-child {
-    background-color: grey;
-  }
-  div:last-child {
-    background-color: grey;
-  }
+
 `
