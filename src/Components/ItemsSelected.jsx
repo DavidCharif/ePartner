@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ItemsSelected = () => {
+const ItemsSelected = ({ title }) => {
   const items = new Array(4).fill(
     <div
       style={{
@@ -14,6 +14,7 @@ const ItemsSelected = () => {
       style={{
         marginTop: '100px'
       }}
+      className='itemsSelected'
     >
     <p
       style={{
@@ -24,7 +25,7 @@ const ItemsSelected = () => {
         color: '#17559b'
 
       }}
-    >NUEVA COLECCION</p>
+    >{title}</p>
     <div
       style={{
         marginTop: '10px',
@@ -35,7 +36,8 @@ const ItemsSelected = () => {
         flexDirection: 'row',
         justifyContent: 'center',
         flexWrap: 'wrap',
-        gap: '5px'
+        gap: '5px',
+        
 
       }}
     >      
